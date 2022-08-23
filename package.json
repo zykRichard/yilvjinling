@@ -1,8 +1,8 @@
 {
-  "name": "nju_social_practice",
+  "name": "project",
   "version": "1.0.0",
   "mpvueTemplateProjectVersion": "0.1.0",
-  "description": "NJU 暑期社会实践小程序",
+  "description": "A Mpvue project",
   "author": "Richard",
   "private": true,
   "scripts": {

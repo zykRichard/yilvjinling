@@ -17,12 +17,12 @@
     </div>
 
     <form class="form-container">
-      <input type="text" class="form-control" :value="motto" placeholder="v-model" />
+      <input type="text" class="form-control" :value="motto" placeholder="" />
       <input type="text" class="form-control" v-model="motto" placeholder="v-model" />
       <input type="text" class="form-control" v-model.lazy="motto" placeholder="v-model.lazy" />
     </form>
 
-    <a href="/pages/counter/main" class="counter">去往Vuex示例页面</a>
+    <a href="/pages/counter/main" class="counter">去往vue示例界面</a>
 
     <div class="all">
         <div class="left">
@@ -39,7 +39,7 @@ import card from '@/components/card'
 export default {
   data () {
     return {
-      motto: 'Hello miniprograme',
+      motto: 'Hello ',
       userInfo: {
         nickName: 'mpvue',
         avatarUrl: 'http://mpvue.com/assets/logo.png'
