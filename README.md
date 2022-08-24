@@ -1,7 +1,7 @@
 # project
 
 > A Mpvue project
-
+> 请首先输入命令npm run dev编译代码
 ## Build Setup
 
 ``` bash
