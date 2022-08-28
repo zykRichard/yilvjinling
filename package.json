@@ -1,9 +1,9 @@
 {
-  "name": "project",
+  "name": "navbar",
   "version": "1.0.0",
   "mpvueTemplateProjectVersion": "0.1.0",
   "description": "A Mpvue project",
-  "author": "Richard",
+  "author": "e <17875625116@163.com>",
   "private": true,
   "scripts": {
     "dev:wx": "node build/dev-server.js wx",
@@ -24,6 +24,8 @@
     "lint": "eslint --ext .js,.vue src"
   },
   "dependencies": {
+    "less": "^3.12.2",
+    "less-loader": "^4.1.0",
     "mpvue": "^2.0.0",
     "vuex": "^3.0.1"
   },
