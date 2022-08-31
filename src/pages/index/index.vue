@@ -27,14 +27,25 @@
       @onShowHander="onShowTestMask()">
   <activeModel :showActive="showActive" >
     <div>
-      <div class="test_box"> 加入引言 </div>
+      <div class="test_box">
+        关于我们
+        <br>
+        -----------------------
+        <br> 
+        本次实践活动延续红色翻译团队之前对南京景点的考察，将区域进一步扩大，辐射到北京和上海地区。
+        <br>
+        考虑到以更多、更好的方式进行宣传，使我们的实践成果能够产生更大范围的良性影响，我们在“九乡河翻译专业团队”微信公众号之外，又新增了本次的红色翻译微信小程序。
+        <br>
+        我们的小程序主要是一张文化地图，集中于南京区域，选取“中山陵”、“侵华日军南京大屠杀遇难同胞纪念馆”、“南京博物院”、“南京云锦博物馆”、“南京渡江胜利纪念馆”、“总统府”这六个具有代表性的文化景点，这些景点不仅文化历史底蕴丰富，而且属于爱国主义教育基地，其中还包括了几个地处南京的全国爱国主义教育示范基地。
+        <br>
+      </div>
       <!-- 这里自定义所需的弹框内容-->
     </div>
   </activeModel>
 </mask>
 
     
-    <button class="button" @click="showTestMask()"> aboutus </button>
+    <button class="button" @click="showTestMask()"> 关于我们 </button>
     </div>
   </div>
 </template>
@@ -48,7 +59,7 @@ export default {
     return {
       motto: 'Hello ',
       userInfo: {
-        nickName: '这是标题',
+        nickName: '译旅金陵·南京爱国主义教育基地双语地图',
         avatarUrl: 'http://mpvue.com/assets/logo.png'
       },
       showActive: true
@@ -97,12 +108,17 @@ export default {
 page {
   height: 700px;
 }
+.test_box {
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: medium;
+}
 .tot_background {
   
   width: 100%;
   height: 600px;
   background-size: 100% 100%;
-  background-image: url(https://636c-cloud1-5gvc6j32238c5e8b-1313536818.tcb.qcloud.la/background.jpg?sign=4aff421c151b069d5097f256b4ccf6f7&t=1661702012);
+  background-image: url(https://636c-cloud1-5gvc6j32238c5e8b-1313536818.tcb.qcloud.la/background2.jpeg?sign=54a8281517343bf2d034fa0e75acba8e&t=1661945795);
 } 
 .userinfo {
   display: flex;
@@ -123,7 +139,7 @@ page {
   position: relative;
   top: 10rpx;
   color: rgb(135, 10, 116);
-  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .usermotto {
@@ -144,14 +160,15 @@ page {
    position: relative;
    width: 50%;
    display: block;
-   top: 200px;
-   background-color: rgb(131, 160, 79);
+   top: 300px;
+   background-color: rgb(66, 66, 81);
    color: white;
    border-block-color: red;
    border-block-width: 10px;
    padding-left: 10px;
    padding-right: 10px;
    border-radius: 100px;
+   font-weight: 700;
 }
 .form-control {
   display: block;

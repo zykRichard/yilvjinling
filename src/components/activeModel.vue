@@ -25,10 +25,11 @@ export default {
   top: 5%;
   left: 10%;
   width: 80%;
-  height: 90%;
+  height: 80%;
   opacity: 1;
-  transform: scale(1);
+  overflow-y: scroll;
   border-radius: 30rpx;
+  transform: scale(1);
   transition: all 0.3s;
   background-color: #fff;
 }

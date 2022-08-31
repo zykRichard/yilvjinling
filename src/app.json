@@ -1,14 +1,12 @@
 {
     "pages": [
         "pages/index/main",
-        "pages/logs/main",
-        "pages/counter/main",
         "pages/map/main"
     ],
     "window": {
         "backgroundTextStyle": "dark",
         "navigationBarBackgroundColor": "#fff",
-        "navigationBarTitleText": "红色翻译",
+        "navigationBarTitleText": "译旅金陵",
         "navigationBarTextStyle": "black"
     },
     "tabBar": {
@@ -23,8 +21,8 @@
             "iconPath": "static/tabs/home.png",
             "selectedIconPath": "static/tabs/home-active.png"
         }, {
-            "text": "订单",
-            "pagePath": "pages/logs/main",
+            "text": "地图",
+            "pagePath": "pages/map/main",
             "iconPath": "static/tabs/orders.png",
             "selectedIconPath": "static/tabs/orders-active.png"
         }],
@@ -35,8 +33,8 @@
             "icon": "static/tabs/home.png",
             "activeIcon": "static/tabs/home-active.png"
         }, {
-            "name": "订单",
-            "pagePath": "pages/logs/main",
+            "name": "地图",
+            "pagePath": "pages/map/main",
             "icon": "static/tabs/orders.png",
             "activeIcon": "static/tabs/orders-active.png"
         }],
