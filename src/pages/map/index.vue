@@ -3,14 +3,14 @@
     <img class="zhongshan" @click="showtext1()" 
       src="https://636c-cloud1-5gvc6j32238c5e8b-1313536818.tcb.qcloud.la/%E4%B8%AD%E5%B1%B1%E9%99%B5.PNG?sign=2219a77447e4c772b471dee6211c760d&t=1661948352" />
       <!-- 弹窗1: 中山陵 -->
-    <div class="header-box" :style="{top: '100px'}">
+    <div class="header-box" >
         <mask ref="testmask1" top="0"
               :noclickhide="false"
               @onHideHander="onhidemask1()"
               @onShowHander="onshowmask1()">
         <activeModel :showActive="showActive.showActive1" >
           <div>
-            <div class="box">
+            <div class="box" @click="clickHandle">
               中山陵 <br>'中山陵是中国近代伟大的民主革命先行者孙中山先生的陵寝及其附属纪念建筑群，位于南京市玄武区紫金山南麓钟山风景名胜区内，陵寝面积8万余平方米，于1926年春动工，至1929年夏建成。<br>  1925年3月12日上午9点30分，孙中山先生因胆囊癌在北平（今北京）铁狮子胡同行辕与世长辞，举国悲痛。逝世前一天，孙中山提出效仿列宁保留遗体，并要求葬于南京。临终前对宋庆龄、汪精卫等人说：“吾死之后，可葬于南京紫金山麓，因南京为临时政府成立之地，所以不可忘辛亥革命也。”<br>  中山陵被誉为“中国近代建筑史上第一陵”，陵墓建筑按南北向中轴线对称布置在中茅山南麓的缓坡上，从空中往下看，中山陵像一座平卧的“自由钟”，取“木铎警世”之意。山下孝经鼎是钟的尖顶，半月形广场是钟顶圆弧，而陵墓顶端墓室的穹隆顶，就像一颗溜圆的钟摆锤。含“唤起民众，以建民国”之意。<br>  1961年，中山陵被国务院公布为首批全国重点文物保护单位；1982年，被列为国家级风景名胜区；1991年，被国家旅游局列为中国旅游胜地四十佳；2007年，被列为首批国家AAAAA级旅游景区；2016年，入选首批“中国20世纪建筑遗产”名录。
               <br>
               ----------------------------
@@ -64,7 +64,7 @@
         <activeModel :showActive="showActive.showActive3" >
           <div>
             <div class="box">
-              南京博物院<br>  南京博物院坐落于南京市紫金山南麓、中山门内北侧，其前身是民国二十二年（1933年）蔡元培倡建的国立中央博物院。目前是中国三大博物馆之一，也是我国第一座由国家投资兴建的大型综合类博物馆，被评为\'全国公共文化设施管理先进单位\'、"国家一级博物馆"、"全国爱国主义教育示范基地"。<br>  南京博物院占地13万余平方米，为“一院六馆”格局，即历史馆、特展馆、数字馆、艺术馆、非遗馆、民国馆。建筑布局体现了"金镶玉成，宝藏其中"的理念，在前后关系、檐口高度、材质颜色以及细部装饰等方面形成视觉平衡。整体风貌既有传统元素，又有现代气息，二者协调融合、交相辉映。<br>  南京博物院现拥有各类藏品43万余件（套），上至旧石器时代，下迄当代，既有全国性的，又有江苏地域性的；既有宫廷传世品，又有考古发掘品，还有一部分来源于社会征集及捐赠，均为历朝历代的珍品佳作，可以说是一座巨大的中华民族文化艺术宝库。青铜、玉石、陶瓷、金银器皿、竹木牙角、漆器、丝织刺绣、书画、印玺、碑刻造像等文物品类一应俱有，每一品种又自成历史系列，成为数千年中华文明历史发展最为直接的见证。
+              南京博物院<br>  南京博物院坐落于南京市紫金山南麓、中山门内北侧，其前身是民国二十二年（1933年）蔡元培倡建的国立中央博物院。目前是中国三大博物馆之一，也是我国第一座由国家投资兴建的大型综合类博物馆，被评为'全国公共文化设施管理先进单位'、"国家一级博物馆"、"全国爱国主义教育示范基地"。<br>  南京博物院占地13万余平方米，为“一院六馆”格局，即历史馆、特展馆、数字馆、艺术馆、非遗馆、民国馆。建筑布局体现了"金镶玉成，宝藏其中"的理念，在前后关系、檐口高度、材质颜色以及细部装饰等方面形成视觉平衡。整体风貌既有传统元素，又有现代气息，二者协调融合、交相辉映。<br>  南京博物院现拥有各类藏品43万余件（套），上至旧石器时代，下迄当代，既有全国性的，又有江苏地域性的；既有宫廷传世品，又有考古发掘品，还有一部分来源于社会征集及捐赠，均为历朝历代的珍品佳作，可以说是一座巨大的中华民族文化艺术宝库。青铜、玉石、陶瓷、金银器皿、竹木牙角、漆器、丝织刺绣、书画、印玺、碑刻造像等文物品类一应俱有，每一品种又自成历史系列，成为数千年中华文明历史发展最为直接的见证。
               <br>
               ----------------------------
               <br>
@@ -102,7 +102,7 @@
       src="https://636c-cloud1-5gvc6j32238c5e8b-1313536818.tcb.qcloud.la/%E6%B8%A1%E6%B1%9F%E8%83%9C%E5%88%A9%E7%BA%AA%E5%BF%B5%E9%A6%86.PNG?sign=16947a80c6972f547e006a37dac83d22&t=1661935242" />
       <!-- 弹窗5: 渡江胜利博物馆 -->
       
-      <div class="header-box" :style="{top: '100px'}">
+      <div class="header-box" >
         <mask ref="testmask5" top="0"
               :noclickhide="false"
               @onHideHander="onhidemask5()"
@@ -270,6 +270,10 @@ export default {
         _this.showActive.showActive6 = true
         console.log('>>>>>>>', _this.showActive.showActive6)
       }, 100)
+    },
+    clickHandle (ev) {
+      console.log('clickHandle:', ev)
+      // throw {message: 'custom test'}
     }
   }
 }
@@ -285,55 +289,68 @@ export default {
   justify-content: center; 
   text-align: center; 
   width: 100%;
-  height: 600px;
+  height: 700px;
   background-size: 100% 100%;
   background-image: url(https://636c-cloud1-5gvc6j32238c5e8b-1313536818.tcb.qcloud.la/map2.jpeg?sign=356a4cdbd2fb1696bef1905af264602e&t=1661949268);
 }
 .zhongshan {
   position: absolute;
-  scale: 25%;
-  left: 42%;
-  top: 28%
+  width: 20%;
+  height: 15%;
+  right: 3%;
+  top: 37%
 }
 
 .massacre {
   position: absolute;
-  scale: 20%;
-  right: 35%;
-  top: 32%
+  width: 20%;
+  height: 15%;
+  left: 15%;
+  top: 45%
 }
 
 .museum {
   position: absolute;
-  scale: 25%;
-  left: 25%;
-  bottom: 11%
+  width: 25%;
+  height: 20%;
+  right: 18%;
+  bottom: 15%
 }
 
 .brocade {
   position: absolute;
-  scale: 25%;
-  right: 32%;
-  top: 22%
+  width: 25%;
+  height: 15%;
+  right: 60%;
+  top: 32%
 }
 .dujiang {
   position: absolute;
-  scale: 25%;
-  right: 27%;
-  top: 5%
+  width: 25%;
+  height: 15%;
+  left: 20%;
+  top: 10%
 }
 
 .palace {
   position: absolute;
-  scale: 25%;
-  left: 15%;
-  top: 27%
+  width: 25%;
+  height: 15%;
+  right: 22%;
+  top: 40%
 }
-
+.header-box {
+  height: 100vh;
+  top: 100px;
+  overflow-y: scroll;
+}
 .box {
-  scale: 80%;
+  height: 60vh;
+  width: 100%;
   background-color: white;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: large; 
+  font-size: medium;
+  z-index: 999;
+  overflow-y: scroll; 
 }
 </style>

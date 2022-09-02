@@ -25,13 +25,15 @@ export default {
   top: 5%;
   left: 10%;
   width: 80%;
-  height: 80%;
+  height: 80vh;
   opacity: 1;
+  scroll-behavior: auto;
   overflow-y: scroll;
   border-radius: 30rpx;
   transform: scale(1);
   transition: all 0.3s;
-  background-color: #fff;
+  background-color: white;
+  z-index: 9;
 }
 .active {
   transform: scale(1);
