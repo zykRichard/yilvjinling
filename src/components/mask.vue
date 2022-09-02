@@ -61,7 +61,7 @@ export default {
 <style scoped lang="less">
 .mask {
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   position: fixed;
   left: 0;
   z-index: 99;

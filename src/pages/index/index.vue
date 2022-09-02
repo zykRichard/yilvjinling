@@ -10,7 +10,7 @@
         <card :text="userInfo.nickName"></card>
       </div>
     </div>
-
+      
     <!-- <div class="usermotto">
       <div class="user-motto">
         <card :text="motto"></card>
@@ -108,6 +108,12 @@ export default {
 page {
   height: 700px;
 }
+.testbox {
+  background-color: white;
+  height: 30vh;
+  width: 60%;
+  overflow-y: scroll;
+}
 .test_box {
   text-align: center;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -116,7 +122,7 @@ page {
 .tot_background {
   
   width: 100%;
-  height: 600px;
+  height: 700px;
   background-size: 100% 100%;
   background-image: url(https://636c-cloud1-5gvc6j32238c5e8b-1313536818.tcb.qcloud.la/background2.jpeg?sign=54a8281517343bf2d034fa0e75acba8e&t=1661945795);
 } 
